@@ -1,0 +1,452 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-size: 62,5%;
+}
+
+body{
+    background-image:url(./imagenes/descarga\ \(2\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*-------------------------------*/
+.header-web {
+    padding: 20px;
+    height: 200px;
+    backdrop-filter: blur;
+}
+
+/*------------------------------*/
+
+/*general css*/
+.header-container {
+    padding: 20px;
+    background-image: radial-gradient(rgba(206, 204, 195, 0.205),rgba(61, 61, 61, 0.603)), url(imagenes/bikiniFlores.png);
+    height: 670px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-container__div {
+   display: block;
+   margin-top: 20px;
+    }
+
+.header-container__div__img {
+    width: 80px;
+    height: 80px;
+}
+
+.nav{
+    padding: 10px;
+    background-color: transparent;
+}    
+
+.nav__ul {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    display:flex ;
+    justify-content:center;
+    text-decoration: none;
+   }
+.nav ul li{
+    display: flex;
+    margin: 10px;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+.buscador {
+    float: right;
+    margin-top:40px;
+    backdrop-filter: blur(4px) saturate(180%);
+    }
+ .buscador__form {
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 60px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: flex-end;
+ } 
+
+.buscador__form input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 12px 10px;
+    font-size: 10px;
+    color: #cac7ff
+ }
+
+ ::placeholder {
+    color: #cac7ff;
+ }
+
+ .buscador__form button img{
+    width: 12.5px;
+ }
+ .buscador__form button {
+    border: 0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background:#58629b;
+    cursor: pointer;
+    margin:auto;
+ }
+ .whatsapp {
+    position: fixed;
+    bottom: 0;
+    left: 1230px;
+    top: 500px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: black;
+}
+
+.whatsapp__img {
+    width: 100px;
+    height: 100px;
+}
+ 
+
+footer {
+    display: flex;
+    justify-content:stretch;
+    align-items: center;
+    background-color:#c79797;
+    color: black;
+    margin-top: 60px;
+    padding: 10px;
+}
+
+.footer-nav {
+    display: block;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+li img {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin: 10px auto;
+}
+ /*------------------*/
+
+ /*index page*/
+
+
+.main__index {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:stretch;
+    flex-direction: row;
+    margin: 30px;
+}
+
+.main__index article {
+    margin: 50px;
+}
+
+
+.rameRojo{
+    display: inline-block;
+    width: 600px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    background-image: radial-gradient(rgba(206, 204, 195, 0.205),rgba(61, 61, 61, 0.603)), url(imagenes/rameRojo.png);
+}    
+
+.rameRojo img {
+    width: 100%;
+    height: 100%;
+}
+
+.rameRojo p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.section-products ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:stretch;
+    flex-direction: row;
+    
+}
+
+
+.product-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 420px;
+    height: 650px;
+    overflow: hidden;
+    margin: 10px;
+    backdrop-filter: blur(4px) saturate(180%);
+    border-radius: 20px;
+    background:linear-gradient(#ffffffdc,
+    #f3f2f2e5);
+    backdrop-filter: blur(4px) saturate(180%);
+    text-decoration: none;
+}
+
+
+.product-nombre img{
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+
+.product-btns {
+    display: flex;
+    justify-content: center;
+}
+
+.product-btns button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 12px;
+    background-color: #c79797;
+    color: aliceblue;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.product-info {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 12px;
+    flex-flow: column;
+    align-items: center;
+    color: black;
+}
+.product-info h2{
+    margin: 5px;
+    color: #c79797;
+}
+.product-info p{
+    margin: 5px;
+}
+/*------------------------------*/
+
+
+/*products page*/
+
+.section-products {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+/*---------------------------*/
+
+/*CONTACT PAGE*/
+.banner-contact {
+    padding: 20px;
+    background-image: radial-gradient(rgba(240, 231, 231, 0),rgba(245, 244, 245, 0.404)), url(./imagenes/banner-contact.JPG);
+    margin: 20px;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+.banner-contact img {
+    width: 500;
+    height: 100;
+}
+.section-contact{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 12px;
+    flex-flow: column;
+    align-items: center;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    
+}
+.section-contact ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+}
+.section-contact ul li {
+    display: flex;
+    text-decoration: none;
+    margin: 0px auto;
+    padding: 5px;
+    border: 5px;
+    align-items: center;
+}
+.section-contact ul li input {
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ffffffa4;
+}
+.section-contact ul li textarea {
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ffffffa4
+
+}
+.section-contact ul li button {
+    padding: 20px;
+    border-radius: 40px;
+    color: white;
+    background-color: #c79797;
+    border: none;
+}
+/*------------------------*/
+
+
+/*MI HISTORIA PAGE*/
+.mi-historia-section {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 12px;
+    flex-flow: column;
+    align-items: center;
+    margin: 30px 300px 30px 300px;
+    color: white;
+    text-decoration: none;
+    
+}
+.mi-historia-section p {
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.mi-historia-div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.mi-historia-div img {
+    width: 400px;
+    height: 500px;
+    border-radius: 50px;
+}
+/*----------------------*/
+
+/*productItems page*/
+
+.products__h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+}
+
+.product_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.kilig-negro-product__div {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.kilig-negro-product__div img {
+    border-radius: 50px;
+    width: 450px;
+    height: 600px;
+}
+
+.kilig-negro-product__texto {
+    display: flex;
+    align-items:stretch;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    flex-direction: column;
+    display: block;
+    width: 400px;
+    height: 200px;
+    margin: 20px;
+    padding: 30px;
+    color: rgb(39, 0, 75);
+}
+
+.kilig-negro-product__texto h2 {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+
+.kilig-negro-product__texto p {
+    text-align: justify;
+    margin: 10px;
+}
+
+.kilig-negro-product__texto select {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    margin: 10px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color: #c79797;
+    color: aliceblue;
+}
+
+.kilig-negro-product__texto button {
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    border: 0;
+    align-items: center;
+    background-color: #c79797;
+    color: aliceblue;
+    margin-top: 10px;
+    display: flex;
+}
+
+.kilig-negro-product__texto button img {
+    border: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin:auto;
+}
